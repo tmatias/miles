@@ -115,16 +115,13 @@ func (o Options) Choose() (string, error) {
 }
 
 func buildPrompt(prompt string, def string, allowed ...string) string {
-	options := ""
-	sep := ""
+	var opts []string
 	for _, v := range allowed {
 		if v == def {
-			v = strings.ToUpper(v)
+			opts = append(opts, strings.ToUpper(v))
 		} else {
-			v = strings.ToLower(v)
+			opts = append(opts, strings.ToLower(v))
 		}
-		options = fmt.Sprintf("%s%s%s", options, sep, v)
-		sep = "/"
 	}
-	return fmt.Sprintf("%s [%s]: ", prompt, options)
+	return fmt.Sprintf("%s [%s]: ", prompt, strings.Join(opts, "/"))
 }
