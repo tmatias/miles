@@ -10,8 +10,10 @@ import (
 	"strings"
 )
 
-var errNilFrom = errors.New("miles: nil reader")
-var errGiveUp = errors.New("miles: gave up")
+var (
+	errNilFrom = errors.New("miles: nil reader")
+	errGiveUp  = errors.New("miles: gave up")
+)
 
 // Options defines a way to ask the user to choose from a set of possible values.
 type Options struct {
