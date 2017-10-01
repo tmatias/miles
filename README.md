@@ -1,6 +1,6 @@
 # miles 
 
-[![CircleCI](https://circleci.com/gh/tmatias/miles.svg?style=shield&)](https://circleci.com/gh/tmatias/miles) [![travis-ci](https://travis-ci.org/tmatias/miles.svg?&branch=master)](https://travis-ci.org/tmatias/miles) [[![Go Report Card](https://goreportcard.com/badge/github.com/tmatias/miles)](https://goreportcard.com/report/github.com/tmatias/miles) ![Documentation](https://godoc.org/github.com/tmatias/miles?status.svg)](http://godoc.org/github.com/tmatias/miles)
+[![CircleCI](https://circleci.com/gh/tmatias/miles.svg?style=shield&)](https://circleci.com/gh/tmatias/miles) [![travis-ci](https://travis-ci.org/tmatias/miles.svg?&branch=master)](https://travis-ci.org/tmatias/miles) [![Go Report Card](https://goreportcard.com/badge/github.com/tmatias/miles)](https://goreportcard.com/report/github.com/tmatias/miles) [![Documentation](https://godoc.org/github.com/tmatias/miles?status.svg)](http://godoc.org/github.com/tmatias/miles)
 
 miles may be the start of a library to ask users of CLI apps to choose from a list of options.
 
