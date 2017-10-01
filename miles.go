@@ -1,4 +1,4 @@
-// Package miles provides helpers for getting user input
+// Package miles provides helpers for getting user input.
 package miles
 
 import (
@@ -13,21 +13,21 @@ import (
 var errNilFrom = errors.New("miles: nil reader")
 var errGiveUp = errors.New("miles: gave up")
 
-// Options defines a way to ask the user to choose from a set of possible values
+// Options defines a way to ask the user to choose from a set of possible values.
 type Options struct {
-	// From is the reader to read the option from
+	// From is the reader to read the option from.
 	From io.Reader
-	// To is the writer to write the prompt to
+	// To is the writer to write the prompt to.
 	To io.Writer
-	// Prompt is the text to show to the user before waiting for his input
+	// Prompt is the text to show to the user before waiting for his input.
 	Prompt string
-	// Allowed options for the user to choose from (will be appended to Prompt)
+	// Allowed options for the user to choose from (will be appended to Prompt).
 	Allowed []string
-	// Default value returned if AllowEmpty is true
+	// Default value returned if AllowEmpty is true.
 	Default string
-	// AllowEmpty allows the user to proceed with an empty value
+	// AllowEmpty allows the user to proceed with an empty value.
 	AllowEmpty bool
-	// MaxAttempts before giving up
+	// MaxAttempts before giving up.
 	MaxAttempts int
 }
 
